@@ -6,7 +6,6 @@ body {
     padding: 0;
     background: url(./images/paper.jpg) left top repeat;
 }
-
 header {
     background: url(./images/disabled_boy.jpg) left top no-repeat, 
     url(./images/disabled_children.jpg) center no-repeat, 
@@ -17,10 +16,10 @@ header {
 header nav {
     margin: 0;
     padding: 0;
+    background: skyblue;
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 1;
 }
 a {
     display: inline-block;
@@ -38,16 +37,20 @@ header nav a:hover:not(.active) {
     background-color: #555;
     color: white;
 }
-h1 {
+header h1 {
+    padding-top:200px;
     font-weight: bold;
     color: white;
     text-align: center;
-    position: absolute;
+    font-size:40px;
 }
 section {
-    position: relative;
     margin: 0;
     padding: 0;
+}
+article {
+    width: 33%; 
+    display: inline-block;
 }
 input[type=submit ] {
     background-color: #4CAF50;
@@ -57,47 +60,64 @@ input[type=submit ] {
     border-radius: 10px;
     cursor: pointer;
     font-size: x-large;
+    width: 49%;
 }
 input[type=submit]:hover {
     background-color: #45a047;
 }
+h1 {
+    text-align: center;
+}
 h3 {
     text-align: center;
+}
+header h4 {
+    text-align: center;
+    display: inline-block;
+    color:#4CAF50;
+    font-weight: bold;
 }
 p {
     padding: 10px 20px;
 }
 span {
-    font-size:smaller;
-    float: right;
+    font-size: 20px;
+    text-decoration:underline;
 }
-.circle {
-    height: 55px;
-    width: 55px;
-    border-radius: 25px; 
-    background-color: #4CAF50;;  
-    position: absolute;
-    top: 0;
-    left: 46%;
-    font-size: 30px;
-    text-align: center;
-}
-.circle:hover:not(.active) {
-    background-color: skyblue;
+div {
+    width: 33%; 
+    display: inline-block; 
+    background: white
 }
 input[type=text] {
     padding: 12px 20px;
-    box-sizing: border-box;
     font-size:large;
+    margin-left: 40%;
+    display:inline-block
 }
-img {
-    display: inline-block;
+section img {
     border-radius: 100px;
-    opacity: 0.85;
+    height: 400px;
+    width:600px;
+    margin-left: 15px;
+    filter: contrast(90%);
+
+}
+main {
+    margin:0;
+    padding:0;
+}
+aside {
+    height: 15em;
+    background: url(./images/contact.jpg) left repeat;
+    background-size:contain;
+    border:2px solid black;
+}
+form {
+    margin-top:100px;
 }
 footer{
     height: 5em;
-    width:100%;
     background-color:skyblue;
 }
 footer nav {
@@ -107,4 +127,9 @@ footer nav {
     text-align: center;
     text-decoration: none;
     padding: 5px 50px;
+}
+footer img {
+    height: 50px;
+    width: 50px;
+    filter: contrast(70%);
 }
