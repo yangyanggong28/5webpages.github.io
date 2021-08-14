@@ -4,12 +4,12 @@
 body {
     margin: 0;
     padding: 0;
-    background: url(./images/paper.jpg) left top repeat;
+    background: url(./images/paper.png) left top repeat;
 }
 header {
-    background: url(./images/disabled_boy.jpg) left top no-repeat, 
-    url(./images/disabled_children.jpg) center no-repeat, 
-    url(./images/disabled_girl.jpg) right top no-repeat;
+    background: url(./images/disabled_boy.png) left top no-repeat, 
+    url(./images/disabled_children.png) center no-repeat, 
+    url(./images/disabled_girl.png) right top no-repeat;
     background-size: 620px, 700px, 620px;
     height: 20em;
 }
@@ -109,7 +109,7 @@ main {
 }
 aside {
     height: 15em;
-    background: url(./images/contact.jpg) left repeat;
+    background: url(./images/contact.png) left repeat;
     background-size:contain;
     border:2px solid black;
 }
