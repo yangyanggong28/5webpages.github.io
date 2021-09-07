@@ -1,0 +1,333 @@
+*{
+    box-sizing:border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+section {
+    margin: 0;
+    padding: 0;
+    display:flex;
+    justify-content:center;
+}
+
+input[type=submit ], #book {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: x-large;
+}
+input[type=submit]:hover, #book:hover{
+    background-color: #45a047;
+}
+h1, h2{
+    text-align: center;
+    color:#4CAF50
+}
+h4 {
+    margin:0;
+    padding: 0;
+    color:dimgray;
+}
+p {
+    padding: 10px 20px;
+    margin:0;
+}
+p a{
+    padding: 0;    
+    margin:0;
+    color:#4CAF50;
+    font-weight: bold;
+    text-decoration: none;
+}
+main {
+    margin:0;
+    padding:0;
+}
+aside {
+    display:flex;
+}
+
+footer{
+    background-color:skyblue;
+}
+footer nav {
+    display: inline-block;
+    border-right: 1px solid #bbb;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 5px 50px;
+}
+article {
+    margin:0;
+    display:flex;
+    flex-flow:column nowrap;
+}
+header figure {
+    margin:45px 0px 0px 0px;
+}
+header figure img {
+    width: 100%;
+    height: 300px;
+    filter: contrast(70%) grayscale(20%);
+}
+.homeimg img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+figure.homeimg, .form{
+    margin:50px 100px;
+    display:flex;
+    flex-flow:column nowrap;
+    justify-content: center;
+}
+.form {
+    background-color: #ddd;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+tr:nth-child(even) {
+    background-color: #D6EEEE;
+}
+tr:last-child {
+    font-size:smaller;
+    font-weight: bold;
+}
+/*header nav menu*/
+header nav {
+    margin: 0;
+    padding: 0;
+    background: skyblue;
+    position: fixed;
+    top: 0;
+    width: 100%;    
+    list-style: none;
+} 
+nav > ul, #subscribe {
+    padding: 0;
+    margin: 0;
+    display:flex;
+}
+header li{    
+    display: block;
+    padding: 14px 16px;    
+    transition-duration: 1s;
+    border-right:1px solid #bbb;
+}
+li a {
+    color: white;
+    text-decoration: none;
+
+}
+header li:hover:not(.active) {
+    background-color: #555;
+    color: white;
+    cursor: pointer;
+}
+ul li ul {
+    background: skyblue;
+    min-width: 5rem;
+    transition: all 1s ease;
+    display: none;
+    position:absolute;
+}
+ul > li > ul > li > ul {
+    margin-top: 0.8rem;
+    left: 1rem;
+}
+ul li:hover > ul,
+ul li ul:hover {
+    display: flex;
+    margin-top: 0.8rem;
+}
+
+#book {
+    height: 45px;
+    width:80px;
+
+}
+
+.products {
+    text-align: center;
+    padding: 32px;
+}
+/* Style the productspage buttons */
+.btn {
+    border: none;
+    outline: none;
+    padding: 10px 16px;
+    background-color: #f1f1f1;
+    cursor: pointer;
+    font-size: 18px;
+}
+.btn:hover {
+    background-color: #ddd;
+}
+  
+.btn.active {
+    background-color: #666;
+    color: white;
+}
+div.gallery {
+    border: 1px solid #ccc;
+    height:300px;
+    width:500px;
+    display:flex;
+    flex-flow: column wrap;
+} 
+div.gallery:hover {
+    border: 2px solid #4CAF50;
+}  
+div.gallery img {
+    margin-top: 8px;
+    vertical-align: middle;
+    height:200px;
+    width:100%;
+    object-fit: fill;
+} 
+div.gallery p {
+    padding: 15px;
+    text-align:center;
+}
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+#glassProducts {
+    display:flex;
+    flex-flow: row wrap;
+    justify-content:center;
+}
+#lenseProducts {
+    display: none;
+    flex-flow: row wrap;
+    justify-content:center;
+}
+#checkbox, #checkboxlabel {
+    display: none;
+}
+#homearticle, #teamphoto, #contactinfo {
+    display:flex;
+} 
+label {
+    display: block;
+}
+input::placeholder {
+    color: transparent;
+}
+.form > input[type = submit] {
+    width: 30%;
+}
+#touchform {
+    width:30%;
+}
+#touchform > input[type = submit] {
+    width: 70%;
+}
+.valid {
+    color:#4CAF50;
+    font-size: x-large;
+    display:block;
+}
+.invalid {
+    color: red;
+    display:block;
+}
+@media only screen and (max-width: 850px) {
+/*productspage*/
+    #glassProducts, #lenseProducts{
+        flex-flow: column wrap;
+    }
+
+/*header*/
+    header figure img {
+        display: none;
+    }
+    footer {
+        display:flex;
+        flex-flow: column nowrap;
+    }
+/*hamberger menu*/
+    label img {
+        height: 50px;
+        width: 50px;
+        float:left;
+    }
+    #checkboxlabel {
+        display:block;
+    }
+    .commonnav {
+        display:none;
+    }
+    #checkbox:checked + .commonnav {
+        display:flex;
+        flex-flow: column nowrap;
+        justify-content: space-around; 
+    }
+    ul li:hover > ul,
+    ul li ul:hover {
+        margin-left: 100px;
+        flex-flow: column nowrap; 
+        background-color: #4CAF50;
+    }  
+    ul > li > ul > li > ul, 
+    ul li:hover > ul,
+    ul li ul:hover {
+        margin-top: 0;
+    }
+
+/*homepage*/
+    #homearticle, #teamphoto, aside > ul {
+        display:flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+    }
+    .form > input[type = submit] {
+        width: 100%;
+    }
+    
+/*servicepage*/
+    table {
+        display:block;
+    }
+    th:nth-child(even) {
+        display: none;
+    }
+    td:nth-child(even){
+        display: none;
+    }
+/*contactus page*/
+    #contactinfo{
+        flex-flow: column nowrap;
+    }
+    label {
+        display: none;
+    }
+    input::placeholder {
+        color:#666;
+    }
+    section {
+        flex-flow: column nowrap;
+    }
+   
+    
+    
+}
+
+/*use flex, align-items, justify-content, flex-direction to center 
+instead of using height, width, margin-left, etc. as it will mess when change to other medias
+accesskey, * /
