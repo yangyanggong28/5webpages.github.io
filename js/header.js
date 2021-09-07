@@ -10,7 +10,7 @@ document.write ('\
         </label>\
         <input type = "checkbox" id = "checkbox">\
         <ul class = "commonnav">\
-            <li><a href = "./home.html" accesskey = "h">Home</a></li>\
+            <li><a href = "./index.html" accesskey = "h">Home</a></li>\
             <li><a href = "./services.html" accesskey = "s">Services</a>\
                 <ul class="servicelist">\
                 <li><a href="#">Glasses</a></li>\
@@ -41,8 +41,8 @@ document.write ('\
             </li>\
             <li><a href = "./quote.html" accesskey = "q">Quote</a></li>\
             <li><a href = "./contact.html" accesskey = "c">Contact&Blog</a></li>\
-            <li id = "book"><a href = "./home.html#homeform">Book</a></li>\
-            <p style = "float: right"><a href = "./home.html">ABC optical</a></p>\
+            <li id = "book"><a href = "./index.html#homeform">Book</a></li>\
+            <p style = "float: right"><a href = "./index.html">ABC optical</a></p>\
         </ul>\
     </nav>\
 ');
