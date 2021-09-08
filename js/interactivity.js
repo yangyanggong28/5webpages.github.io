@@ -1,4 +1,3 @@
-
 // show glass products
 var glassProducts = document.getElementById("glassProducts");
 var lenseProducts = document.getElementById("lenseProducts");  
@@ -20,21 +19,21 @@ for (var i = 0; i < btns.length; i++) {
     this.className += " active";
   });
 }
+let message = document.getElementById("message");
 
-function submitForm() {
+function submitForm(event) {
+  event.preventDefault();
   let fname = document.getElementById("fname");
   let lname = document.getElementById("lname");
-  let email = document.getElementById("email");
-  let message = document.getElementById("message");
+  let email = document.getElementById("email");  
+  message.style.display = "block"; 
   if (fname.value == "" || lname.value == "" || email.value == "") {
-      message.innerHTML = "Please fill out all the fields!";
-      message.classList.remove("valid");
-      message.classList.add("invalid");
+    message.innerHTML = "Please fill out all the fields!";
   }
   else {
-      message.innerHTML = "Submit success! Thank you !";
-      message.classList.remove("invalid");
-      message.classList.add("valid");
+    message.innerHTML = "Submit success! Thank you !";
+    message.classList.remove("invalid");
+    message.classList.add("valid");
   }
 }
 

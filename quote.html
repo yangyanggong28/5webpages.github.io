@@ -2,7 +2,9 @@
 <html lang = "en">
 <head>
     <meta charset = "UTF-8">
-    <title>consultation</title>
+    <title>quote</title>
+    <meta name = "viewport"
+        content = "width=device-width, initial-scale = 1.0">
     <script src = "js/interactivity.js" defer></script>
     <link rel = "stylesheet" href = "style.css">
 </head>
@@ -13,7 +15,7 @@
     <main>
         <h1>Get a quote</h1>
         <form>  
-            <fieldset class = "form">
+            <fieldset class = "form" id = "quoteform">
                 <legend>Enter your prescription details:</legend>  
                 <script src = "js/contactform.js"></script>
                 <br><br>
@@ -58,11 +60,11 @@
                     <option value="more">More</option>
                 </select>
             </div>
-            <input type = "submit" value = "Get a quote" onclick = "submitForm()">
+            <input type = "submit" value = "Get a quote" onclick = "submitForm(event)">
             </fieldset>
-            <p id = "message" class = "valid"></p>
+            
         </form>
-        
+        <p id = "message" class = "invalid"></p>
     </main>
     <footer>
         <script src = "js/footer.js"></script>

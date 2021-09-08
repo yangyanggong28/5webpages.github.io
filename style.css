@@ -11,7 +11,6 @@ section {
     display:flex;
     justify-content:center;
 }
-
 input[type=submit ], #book {
     background-color: #4CAF50;
     color: white;
@@ -51,8 +50,7 @@ main {
 aside {
     display:flex;
 }
-
-footer{
+footer {
     background-color:skyblue;
 }
 footer nav {
@@ -121,7 +119,7 @@ nav > ul, #subscribe {
     margin: 0;
     display:flex;
 }
-header li{    
+header li {    
     display: block;
     padding: 14px 16px;    
     transition-duration: 1s;
@@ -130,7 +128,6 @@ header li{
 li a {
     color: white;
     text-decoration: none;
-
 }
 header li:hover:not(.active) {
     background-color: #555;
@@ -153,13 +150,10 @@ ul li ul:hover {
     display: flex;
     margin-top: 0.8rem;
 }
-
 #book {
     height: 45px;
-    width:80px;
-
+    width:80px;    
 }
-
 .products {
     text-align: center;
     padding: 32px;
@@ -175,8 +169,7 @@ ul li ul:hover {
 }
 .btn:hover {
     background-color: #ddd;
-}
-  
+}  
 .btn.active {
     background-color: #666;
     color: white;
@@ -238,21 +231,22 @@ input::placeholder {
 #touchform > input[type = submit] {
     width: 70%;
 }
+#message {
+    display:none;
+    background-color: #f1f1f1;
+}
 .valid {
     color:#4CAF50;
     font-size: x-large;
-    display:block;
 }
 .invalid {
     color: red;
-    display:block;
 }
 @media only screen and (max-width: 850px) {
 /*productspage*/
     #glassProducts, #lenseProducts{
         flex-flow: column wrap;
     }
-
 /*header*/
     header figure img {
         display: none;
@@ -289,7 +283,6 @@ input::placeholder {
     ul li ul:hover {
         margin-top: 0;
     }
-
 /*homepage*/
     #homearticle, #teamphoto, aside > ul {
         display:flex;
@@ -299,7 +292,6 @@ input::placeholder {
     .form > input[type = submit] {
         width: 100%;
     }
-    
 /*servicepage*/
     table {
         display:block;
@@ -311,7 +303,7 @@ input::placeholder {
         display: none;
     }
 /*contactus page*/
-    #contactinfo{
+    #contactinfo {
         flex-flow: column nowrap;
     }
     label {
@@ -321,13 +313,6 @@ input::placeholder {
         color:#666;
     }
     section {
-        flex-flow: column nowrap;
+        flex-flow: column wrap;
     }
-   
-    
-    
 }
-
-/*use flex, align-items, justify-content, flex-direction to center 
-instead of using height, width, margin-left, etc. as it will mess when change to other medias
-accesskey, * /

@@ -41,8 +41,8 @@ document.write ('\
             </li>\
             <li><a href = "./quote.html" accesskey = "q">Quote</a></li>\
             <li><a href = "./contact.html" accesskey = "c">Contact&Blog</a></li>\
+            <p><a href = "./index.html">ABC optical</a></p>\
             <li id = "book"><a href = "./index.html#homeform">Book</a></li>\
-            <p style = "float: right"><a href = "./index.html">ABC optical</a></p>\
         </ul>\
     </nav>\
 ');

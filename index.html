@@ -4,6 +4,8 @@
 <head>
     <meta charset = "UTF-8">
     <title>Home</title>
+    <meta name = "viewport"
+        content = "width=device-width, initial-scale = 1.0">
     <script src = "js/interactivity.js" defer></script>
     <link rel = "stylesheet" href = "style.css">
     <script type="text/javascript" src="https://addevent.com/libs/atc/1.6.1/atc.min.js" async defer></script>
@@ -52,10 +54,10 @@
                 <script src = "js/contactform.js"></script><br>
                 <script src = "js/calender.js"></script>
                 <script src = "js/addcalender.js"></script><br>
-                <input type = "submit" value = "Book a consultation" onclick = "submitForm()"><br>
+                <input type = "submit" value = "Book a consultation" onclick = "submitForm(event)"><br>
             </fieldset>
         </form>
-        <p id = "message" class = "valid"></p>
+        <p id = "message" class = "invalid"></p>
     </main>
     <footer>
         <script src = "js/footer.js"></script>
