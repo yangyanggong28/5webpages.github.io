@@ -43,7 +43,7 @@ p > a{
     text-decoration: none;
 }
 main {
-    margin:0px 0px 50px 0px;
+    margin:0px 0px 50px 5px;
     padding:0;
     display:flex;
     flex-flow:column nowrap;
@@ -67,8 +67,8 @@ header figure img {
     filter: contrast(70%) grayscale(20%);
 }
 .homeimg img {
-    width: 400px;
-    height: 400px;
+    width: 300px;
+    height: 300px;
     object-fit: cover;
 }
 figure.homeimg, .form{
@@ -173,7 +173,7 @@ ul li ul:hover {
 div.gallery {
     border: 1px solid #ccc;
     height:300px;
-    width:500px;
+    width:400px;
     display:flex;
     flex-flow: column wrap;
 } 
@@ -184,7 +184,7 @@ div.gallery img {
     margin-top: 8px;
     vertical-align: middle;
     height:200px;
-    width:100%;
+    width:380px;
     object-fit: fill;
 } 
 div.gallery p {
@@ -199,19 +199,16 @@ div.gallery p {
 #glassProducts {
     display:flex;
     flex-flow: row wrap;
-    justify-content:center;
+    justify-content:space-around;
 }
 #lenseProducts {
     display: none;
     flex-flow: row wrap;
-    justify-content:center;
+    justify-content:space-around;    
 }
 #checkbox, #checkboxlabel {
     display: none;
 }
-#teamphoto {
-    justify-content: space-between;
-} 
 label {
     display: block;
 }
@@ -234,6 +231,7 @@ input::placeholder {
 /*productspage*/
     #glassProducts, #lenseProducts{
         flex-flow: column wrap;
+        align-items: center;
     }
 /*header*/
     header figure img {
@@ -272,7 +270,7 @@ input::placeholder {
         margin-top: 0;
     }
 /*homepage*/
-    #homearticle, #teamphoto, aside > ul {
+    #homearticle,aside > ul {
         flex-flow: column nowrap;
         justify-content: center;
     }   
