@@ -270,9 +270,10 @@ input::placeholder {
         margin-top: 0;
     }
 /*homepage*/
-    #homearticle,aside > ul {
+    #homearticle,aside,figure.homeimg {
         flex-flow: column nowrap;
         justify-content: center;
+        align-items: center;
     }   
 /*servicepage*/
     table {
