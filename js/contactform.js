@@ -1,5 +1,4 @@
 document.write('\
-<form>\
     <label for="fname">First name:</label>\
     <input type="text" placeholder = "First name" id = "fname"><br>\
     <label for="lname">Last name:</label>\
@@ -13,5 +12,4 @@ document.write('\
         <option value="teens">Teens</option>\
         <option value="Kids">Kids</option>\
     </select>\
-</form>\
 ');

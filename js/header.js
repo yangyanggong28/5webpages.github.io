@@ -1,12 +1,12 @@
 document.write ('\
     \
     <figure>\
-        <img src = "./images/headerpic.png">\
+        <img src = "../images/headerpic.png">\
     </figure>\
     \
-    <nav role="headernavi">\
+    <nav>\
         <label for = "checkbox" id = "checkboxlabel">\
-            <img src = "./images/hamberger.png">\
+            <img src = "../images/hamberger.png">\
         </label>\
         <input type = "checkbox" id = "checkbox">\
         <ul class = "commonnav">\

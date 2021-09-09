@@ -24,7 +24,6 @@ input[type=submit]:hover, #book:hover{
     background-color: #45a047;
 }
 h1, h2{
-    text-align: center;
     color:#4CAF50
 }
 h4 {
@@ -36,7 +35,7 @@ p {
     padding: 10px 20px;
     margin:0;
 }
-p a{
+p > a{
     padding: 0;    
     margin:0;
     color:#4CAF50;
@@ -44,22 +43,24 @@ p a{
     text-decoration: none;
 }
 main {
-    margin:0;
+    margin:0px 0px 50px 0px;
     padding:0;
+    display:flex;
+    flex-flow:column nowrap;
+    justify-content: center;
+    align-items:center;
 }
 aside {
     display:flex;
 }
-footer {
-    background-color:skyblue;
-}
 footer nav {
-    display: inline-block;
-    border-right: 1px solid #bbb;
-    color: white;
-    text-align: center;
-    text-decoration: none;
-    padding: 5px 50px;
+    margin: 0;
+    padding: 0;
+    background: skyblue;
+    position: fixed;
+    bottom: 0;
+    width: 100%;    
+    list-style: none;
 }
 article {
     margin:0;
@@ -75,12 +76,11 @@ header figure img {
     filter: contrast(70%) grayscale(20%);
 }
 .homeimg img {
-    width: 300px;
-    height: 300px;
+    width: 400px;
+    height: 400px;
     object-fit: cover;
 }
 figure.homeimg, .form{
-    margin:50px 100px;
     display:flex;
     flex-flow:column nowrap;
     justify-content: center;
@@ -88,7 +88,6 @@ figure.homeimg, .form{
 .form {
     background-color: #ddd;
 }
-
 table {
     border-collapse: collapse;
     width: 100%;
@@ -105,21 +104,27 @@ tr:last-child {
     font-weight: bold;
 }
 /*header nav menu*/
-header nav {
+nav {
     margin: 0;
     padding: 0;
-    background: skyblue;
-    position: fixed;
-    top: 0;
+    background: skyblue;    
     width: 100%;    
     list-style: none;
+}
+header nav {
+    position: fixed;
+    top: 0;
+}
+footer > nav {
+    position: fixed;
+    bottom: 0;
 } 
 nav > ul, #subscribe {
     padding: 0;
     margin: 0;
     display:flex;
 }
-header li {    
+header li, footer li {    
     display: block;
     padding: 14px 16px;    
     transition-duration: 1s;
@@ -213,23 +218,14 @@ div.gallery p {
 #checkbox, #checkboxlabel {
     display: none;
 }
-#homearticle, #teamphoto, #contactinfo {
-    display:flex;
+#teamphoto {
+    justify-content: space-between;
 } 
 label {
     display: block;
 }
 input::placeholder {
     color: transparent;
-}
-.form > input[type = submit] {
-    width: 30%;
-}
-#touchform {
-    width:30%;
-}
-#touchform > input[type = submit] {
-    width: 70%;
 }
 #message {
     display:none;
@@ -241,6 +237,7 @@ input::placeholder {
 }
 .invalid {
     color: red;
+    font-size: x-large;
 }
 @media only screen and (max-width: 850px) {
 /*productspage*/
@@ -285,13 +282,9 @@ input::placeholder {
     }
 /*homepage*/
     #homearticle, #teamphoto, aside > ul {
-        display:flex;
         flex-flow: column nowrap;
         justify-content: center;
-    }
-    .form > input[type = submit] {
-        width: 100%;
-    }
+    }   
 /*servicepage*/
     table {
         display:block;

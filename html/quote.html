@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset = "UTF-8">
+    <title>quote</title>
+    <meta name = "viewport"
+        content = "width=device-width, initial-scale = 1.0">
+    <script src = "../js/interactivity.js" defer></script>
+    <link rel = "stylesheet" href = "../style.css">
+</head>
+<body> 
+    <header>
+        <script src = "../js/header.js"></script>
+    </header>
+    <main>
+        <h1>Get a quote</h1>
+        <form>  
+            <fieldset class = "form">
+                <legend>Enter your prescription details:</legend>  
+                <script src = "../js/contactform.js"></script>
+                <br><br>
+                <textarea name="prescription" rows="10" cols="30" placeholder="Please input your prescription details">
+                </textarea>            
+                <div>
+                    <label for="type">Choose a type:</label>
+                    <select name="type" id="type">
+                        <option selected disabled>type</option>
+                        <option value="glass">Glasses</option>
+                        <option value="lense">Contact lenses</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="glasstype" >Choose glass type:</label>
+                    <select name="glasstype" id="glasstype">
+                        <option selected disabled>glass type</option>
+                        <option value="glasses">Glasses</option>
+                        <option value="sunglasses">Sunglasses</option>
+                        <option value="degglass">Designer glass</option>
+                        <option value="nonglass">Non-prescription glass</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="lensetype" >Choose contact lenses type:</label>
+                    <select name="lensetype" id="lensetype">
+                        <option selected disabled>lense type</option>
+                        <option value="daily">Daily</option>
+                        <option value="fortnightly">Fortnightly</option>
+                        <option value="monthly">Monthly</option>
+                        <option value="multifocal">Multifocal</option>
+                        <option value="toric">Toric</option>
+                    </select>
+                </div>
+                <div>            
+                    <label for="brand">Brand:</label>
+                    <select name="brand" id="brand">
+                        <option selected disabled>Brand</option>
+                        <option value="ABC">ABC optical</option>
+                        <option value="converse">Converse</option>
+                        <option value="ck">CK</option>
+                        <option value="more">More</option>
+                    </select>
+                </div>
+                <input type = "submit" value = "Get a quote" onclick = "submitForm(event)">
+            </fieldset>
+        </form>
+        <p id = "message" class = "invalid"></p>
+    </main>
+    <footer>
+        <script src = "../js/footer.js"></script>
+    </footer>
+</body>
+</html>
