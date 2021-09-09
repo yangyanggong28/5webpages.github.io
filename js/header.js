@@ -1,27 +1,27 @@
 document.write ('\
     \
     <figure>\
-        <img src = "../images/headerpic.png">\
+        <img src = "./images/headerpic.png">\
     </figure>\
     \
     <nav>\
         <label for = "checkbox" id = "checkboxlabel">\
-            <img src = "../images/hamberger.png">\
+            <img src = "./images/hamberger.png">\
         </label>\
         <input type = "checkbox" id = "checkbox">\
         <ul class = "commonnav">\
             <li><a href = "./index.html" accesskey = "h">Home</a></li>\
             <li><a href = "./services.html" accesskey = "s">Services</a>\
-                <ul class="servicelist">\
-                <li><a href="#">Glasses</a></li>\
-                <li><a href="#">Contact lenses</a></li>\
-                <li><a href="#">Eye health</a></li>\
+                <ul>\
+                <li><a href="./services.html">Glasses</a></li>\
+                <li><a href="./services.html">Contact lenses</a></li>\
+                <li><a href="./services.html">Eye health</a></li>\
                 </ul>\
             </li>\
             <li><a href = "./products.html" accesskey = "p">Products</a>\
-                <ul class="productlist">\
+                <ul>\
                 <li><a href="#">Glasses</a>\
-                    <ul class="glasslist">\
+                    <ul>\
                     <li><a href="#">Glasses</a></li>\
                     <li><a href="#">Sunglasses</a></li>\
                     <li><a href="#">Designer glass</a></li>\
@@ -29,7 +29,7 @@ document.write ('\
                     </ul>\
                 </li>\
                 <li><a href="#">Contact lenses</a>\
-                    <ul class="lenselist">\
+                    <ul>\
                     <li><a href="#">Daily</a></li>\
                     <li><a href="#">Fortnightly</a></li>\
                     <li><a href="#">Monthly</a></li>\

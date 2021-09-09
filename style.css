@@ -53,15 +53,6 @@ main {
 aside {
     display:flex;
 }
-footer nav {
-    margin: 0;
-    padding: 0;
-    background: skyblue;
-    position: fixed;
-    bottom: 0;
-    width: 100%;    
-    list-style: none;
-}
 article {
     margin:0;
     display:flex;
