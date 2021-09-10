@@ -44,11 +44,4 @@ fetch("../html/calender.html")
     calender.innerHTML = caldata;
 })
 
-fetch("../html/addcalender.html")
-.then(response => response.text())
-.then(addcaldata => {
-    let addcalender = document.getElementById("addcalender");
-    addcalender.innerHTML = addcaldata;
-})
-
 
