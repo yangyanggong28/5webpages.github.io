@@ -36,24 +36,19 @@ function submitForm(event) {
     message.classList.add("valid");
   }
 }
-//ERROR:Fetch API cannot load 
-//file:///C:/Users/Betty/repos/5webpages%20WD2/calender.html.
-//URL scheme "file" is not supported.
-//interactivity.js:40 Uncaught (in promise) TypeError: Failed to fetch
 
-/*
-fetch("./html/calender.html")
+fetch("../html/calender.html")
 .then(response => response.text())
 .then(caldata => {
     let calender = document.getElementById("calender");
     calender.innerHTML = caldata;
 })
 
-fetch("./html/addcalender.html")
+fetch("../html/addcalender.html")
 .then(response => response.text())
 .then(addcaldata => {
     let addcalender = document.getElementById("addcalender");
     addcalender.innerHTML = addcaldata;
 })
-*/
+
 
